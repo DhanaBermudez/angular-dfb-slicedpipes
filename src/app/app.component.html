@@ -1,0 +1,32 @@
+<link
+  href="https://fonts.googleapis.com/css?family=Bree+Serif"
+  rel="stylesheet"
+  type="text/css"
+/>
+
+<div class="bar">
+  SLICE
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+<div>
+  <p><b>Start index:</b> {{ Fruits | slice: 2 }}</p>
+  <p><b>Start and end index:</b> {{ Fruits | slice: 1:4 }}</p>
+  <p><b>Negative index:</b> {{ Fruits | slice: -2 }}</p>
+  <p><b>Negative start and end index:</b> {{ Fruits | slice: -4:-2 }}</p>
+</div>
+<div class="bar">
+  DECIMAL
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+<div>
+  <p>
+    {{ decimalNum1 | number }}<br />
+    {{ decimalNum2 | number }}
+  </p>
+</div>
